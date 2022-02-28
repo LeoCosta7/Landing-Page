@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+
+body {
+    height: 90vh;
+    /* background-color: rgba(237, 237, 237, 0.645); */
+    background-color: black;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {        /*Ajusta toda a nav bar, mas não os li*/
+    height: 10vh;
+    background-color: black;
+    /* background-color: #fff; */
+    margin-bottom: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.navbar ul {     /*Ajusta apenas os ul*/
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {      /*Ajusta apenas o a*/
+    letter-spacing: 4px;
+    padding: 0 30px;
+    text-decoration: none;
+    /* color: #c4a5f7d9; */
+    color: #fff;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.first-content {
+    max-width: 600px;
+}
+
+.title {
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.title-magazine {
+    font-size: 70px;
+    color: #ab76ffd9;
+    margin-top: -8px;
+}
+
+p {
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 30px 0;
+    color: #fff;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+input {
+    max-width: 60%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    border: 3px solid #ab76ffd9; 
+    outline: none;
+    /* border: none; */
+}
+
+button {
+    max-width: 66%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px solid #ab76ffd9; 
+    background-color: #ab76ffd9;
+    color: aliceblue;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: black;
+}
+
+
