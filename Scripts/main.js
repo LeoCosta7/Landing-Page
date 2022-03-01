@@ -1,5 +1,3 @@
-/* ---- particles.js config ---- */
-
 particlesJS("background", {
     "particles": {
       "number": {
@@ -110,9 +108,6 @@ particlesJS("background", {
     },
     "retina_detect": true
   });
-  
-  
-  /* ---- stats.js config ---- */
   
   var count_particles, stats, update;
   stats = new Stats;

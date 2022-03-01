@@ -28,38 +28,40 @@ body {
 .nav-items {      
     font-size: 18px;
     letter-spacing: 3px;
-    margin: 0 30px;
+    margin: 0 20px;
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 .nav-items:hover {
     opacity: 0.8;
     padding-bottom: 12px;
-    border-bottom: 3px solid rgba(255,225,1,255);
+    border-bottom: 3px solid #fee100;
 }
 
 .logo {
     letter-spacing: 3px;
     margin: 0 30px;
-    color: rgba(255,225,1,255);
+    color: #fee100; 
     font-weight: 900;
     text-decoration: none;
     font-size: 36px;
 }
 
+.logo:hover {
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
 main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 0 30px;
 }
 
-.first-content {
-    min-width: 700px;
-}
 
 .title {
     font-size: 50px;
@@ -71,6 +73,7 @@ main {
     font-size: 75px;
     color: #7049a4;
     margin-top: -8px;
+    max-width: 350px;
 }
 
 .subtitle {
@@ -84,7 +87,7 @@ main {
 .span-title {
     font-size: 18px;
     font-weight: 900;
-    color: rgba(255,225,1,255);
+    color: #fee100;
 }
 
 form {
@@ -93,28 +96,43 @@ form {
 }
 
 input {
-    max-width: 60%;
+    max-width: 420px;
     margin-bottom: 15px;
     border-radius: 15px;
     padding: 15px;
-    border: 3px solid #7049a4; 
     outline: none;
-    /* border: none; */
+    font-size: 15px;
+    font-weight: bold;
+    /* border: 3px solid black;  */
+    border: none;
+}
+
+input::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+input:focus {
+    transition: 0.3s;
+    box-shadow: 0 0 0 3px #7049a4;
 }
 
 button {
-    max-width: 66%;
+    max-width: 450px;
     margin-bottom: 15px;
     border-radius: 15px;
     padding: 15px;
     border: 2px solid #7049a4; 
     background-color: #7049a4;
     color: aliceblue;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 3px;
 }
 
 button:hover {
+    transition: 0.5s;
     background-color: #32017e;
     border: 2px solid #32017e;
     color: #fff;
@@ -132,4 +150,13 @@ button:hover {
     bottom: 0;
     right: 0;
     z-index: -1;  /*Coloca-o como background*/
+}
+
+@media screen and (max-width: 760px) {
+    .navbar {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: column;
+    }
 }
