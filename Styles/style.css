@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 90vh;
     background-color: black;
@@ -7,17 +12,25 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+.container {
+    padding: 0 10px;
+}
+
+.nav-logo {
+    letter-spacing: 3px;
+    margin: 0 20px;
+    color: #fee100; 
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 36px;
 }
 
 .navbar {
-    height: 10vh;
     margin-bottom: 30px;
     display: flex;
     align-items:center;
     justify-content: space-between;
+    min-width: 100px;
 }
 
 .navbar ul {
@@ -41,27 +54,17 @@ body {
     border-bottom: 3px solid #fee100;
 }
 
-.logo {
-    letter-spacing: 3px;
-    margin: 0 30px;
-    color: #fee100; 
-    font-weight: 900;
-    text-decoration: none;
-    font-size: 36px;
-}
-
-.logo:hover {
+.nav-logo:hover {
     transition: 0.5s;
     opacity: 0.8;
 }
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0 30px;
 }
-
 
 .title {
     font-size: 50px;
@@ -84,7 +87,7 @@ main {
     color: #fff;
 }
 
-.span-title {
+.span-subtitle {
     font-size: 18px;
     font-weight: 900;
     color: #fee100;
@@ -139,8 +142,8 @@ button:hover {
 }
 
 .logo-img {
+    margin-top: 30px;
     height: 590px;
-    /* width: 700px; */
 }
 
 #background {
@@ -153,10 +156,28 @@ button:hover {
 }
 
 @media screen and (max-width: 760px) {
+    .container {
+        padding: 0 40px;
+    }
+    .nav-logo {
+        font-size: 50px;
+    }
     .navbar {
         flex-direction: column;
     }
     main {
         flex-direction: column;
+    }
+    .nav-logo {
+        margin-bottom: 30px;
+    }
+    .title {
+        font-size: 45px;
+    }
+    .subtitle {
+        font-size: 15px;
+    }
+    .span-subtitle {
+        font-size: 17px;
     }
 }
