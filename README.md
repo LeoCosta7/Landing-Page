@@ -14,6 +14,6 @@
 
 ## 4. Resultado alcançado
 
-- Acesse aqui: https://spacehistory.vercel.app/
+- Acesse aqui: https://galaxy-history.vercel.app/
 
 ![space](https://user-images.githubusercontent.com/60816154/158829725-008a64de-9350-4c53-b3bd-424210fa7ef6.gif)
