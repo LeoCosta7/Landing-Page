@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 90vh;
+    height: 80vh;
     background-color: black;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
@@ -17,7 +17,7 @@ body {
 }
 
 .navbar {
-    margin-bottom: 30px;
+    margin: 10px 10px;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -25,7 +25,7 @@ body {
 }
 
 .nav-logo {
-    font-size: 38px;
+    font-size: 40px;
     letter-spacing: 3px;
     margin: 0 20px;
     color: #fee100; 
@@ -44,6 +44,7 @@ body {
 }
 
 .items {      
+    font-size: 17px;
     letter-spacing: 3px;
     margin: 0 20px;
     text-decoration: none;
