@@ -8,7 +8,7 @@
     .navbar {
         flex-direction: column;
     }
-    .nav-items {
+    .items {
         margin: 0 5px;
     }
     main {
@@ -36,7 +36,7 @@
         margin-top: 10px;
         font-size: 30px;
     }
-    .nav-items {
+    .items {
         font-size: 16px;
     }
     .title {
@@ -64,5 +64,13 @@
     .logo-img {
         height: 400px;
         max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .item-travel{
+        border: none;
+        color: #fee100;
+        font-weight: bold;
     }
 }
